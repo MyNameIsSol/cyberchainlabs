@@ -12,11 +12,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-6 py-16 flex flex-col md:flex-row items-center gap-10">
         {/* Left Content */}
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Fight Against{" "}
+        <div className="flex-1 text-start md:text-left">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+            Report Suspicious {" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-pink-600">
-              Crypto Scams
+              Crypto Activity
             </span>
           </h1>
           <p className="mt-4 text-lg text-gray-300">
