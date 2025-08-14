@@ -15,7 +15,7 @@ const Home = () => {
         <div className="flex-1 text-start md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Report Suspicious {" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-pink-600">
+            <span className="text-nowrap text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-pink-600">
               Crypto Activity
             </span>
           </h1>
