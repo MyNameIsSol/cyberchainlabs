@@ -2,8 +2,10 @@ import Navbar from "../components/Navbar.jsx";
 import heroImage from "../assets/images/hero-image.jpg"; // Make sure you have an image in src/assets
 import { AlertTriangle, Search, ShieldCheck, Users } from "lucide-react";
 import Footer from "../components/Footer.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate()
   return (
     <div className="bg-slate-900 min-h-screen text-white">
       {/* Navbar */}
@@ -15,7 +17,7 @@ const Home = () => {
         <div className="flex-1 text-start md:text-left">
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Report Suspicious {" "}
-            <span className="text-nowrap text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-pink-600">
+            <span className=" text-transparent bg-clip-text bg-gradient-to-br from-pink-400 to-pink-600">
               Crypto Activity
             </span>
           </h1>
@@ -26,10 +28,10 @@ const Home = () => {
 
           {/* Action Buttons */}
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="px-6 py-3 bg-gradient-to-br from-pink-400 to-pink-600 text-white rounded-lg font-semibold hover:scale-105 transition">
+            <button onClick={() => navigate("/reportScam")} className="px-6 py-3 bg-gradient-to-br from-pink-400 to-pink-600 text-white rounded-lg font-semibold hover:scale-105 transition">
               Report a Scam
             </button>
-            <button className="px-6 py-3 border border-pink-500 text-white rounded-lg font-semibold hover:bg-gradient-to-br from-pink-400 to-pink-600 transition">
+            <button onClick={() => navigate("/scamReports")} className="px-6 py-3 border border-pink-500 text-white rounded-lg font-semibold hover:bg-gradient-to-br from-pink-400 to-pink-600 transition">
               Search Scams
             </button>
           </div>
